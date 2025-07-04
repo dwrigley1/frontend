@@ -2,7 +2,10 @@
 // it will trigger when the DOM is loaded
 // aka upon visiting the wbpage
 addEventListener("DOMContentLoaded", async function(){
-    const response = await fetch("http://localhost:3000/api/songs")
+    //const response = await fetch("http://localhost:3000/api/songs")
+    const PORT = process.env.PORT || 3000;
+    app.listen(PORT, () => console.log(`Server is running on port ${PORT}`));
+
     const songs = await response.json()
 
     let html ="" // blank screen
