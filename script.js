@@ -3,7 +3,9 @@
 // aka upon visiting the wbpage
 
 addEventListener("DOMContentLoaded", async function() {
-    const response = await fetch("https://shelled-flying-client.glitch.me/api/songs");
+    //const response = await fetch("https://shelled-flying-client.glitch.me/api/songs"); // send to Glitch
+    const response = await fetch("http://localhost:3000/api/songs") // keep local
+
     const songs = await response.json();
 
     let html = ""; // blank screen
