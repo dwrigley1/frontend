@@ -16,7 +16,7 @@ addEventListener("DOMContentLoaded", async function(){
 
    
 
-    const response = await fetch("http://localhost:3000/api/songs")
+    const response = await fetch("https://backend-yjzl.onrender.com/api/songs/")
     const songs = await response.json()
 
     // find the song with the matching ID

@@ -4,7 +4,7 @@
 
 addEventListener("DOMContentLoaded", async function() {
     //const response = await fetch("https://shelled-flying-client.glitch.me/api/songs"); // send to Glitch
-    const response = await fetch("http://localhost:3000/api/songs") // keep local
+    const response = await fetch("https://backend-yjzl.onrender.com/api/songs/") // keep local
 
     const songs = await response.json();
 
