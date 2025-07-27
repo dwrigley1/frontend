@@ -4,7 +4,7 @@ addEventListener("DOMContentLoaded", async function(){
              const urlparam = new URLSearchParams(window.location.search)
              const songID = urlparam.get('id')
 
-             const response = await fetch("http://localhost:3000/api/songs/" + songID) // option 1
+             const response = await fetch("https://backend-yjzl.onrender.com/api/songs/" + songID) // option 1
              if(response.ok){
                  let song = await response.json()
                  document.querySelector("#songId").value = song._id
